@@ -38,6 +38,14 @@ export default function TVList() {
     return <Loading />;
   }
 
+  if (!data || data.length === 0) {
+    return (
+      <div className="text-3xl pt-[150px]">
+        No TV shows found. Try another search.
+      </div>
+    );
+  }
+
   return (
     <div className="p-4 bg-black">
       <h1 className="text-3xl font-bold mb-4">TVList</h1>

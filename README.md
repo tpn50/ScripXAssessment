@@ -1,71 +1,42 @@
-# Getting Started with Create React App
+# TV Show App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React-based web application that allows users to search for TV shows using the TVMaze API. The application has a simple design, with a search bar, list view of search results, and a detailed view of a particular TV show.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Home page with a search bar to search for TV shows
+- A List page that displays the results of a search
+- A Details page that displays detailed information about a particular TV show
+- A Header component for easier navigation
 
-### `npm start`
+## How to use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The home page provides a search bar. Type the name of a TV show you're interested in and click "Submit"
+- You'll be redirected to the List page with the results of your search displayed. Each item in the list includes basic information about the show.
+- Click on the name of a TV show to see more detailed information on the Details page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to run locally
 
-### `npm test`
+- Clone this repository
+- Run `npm install` to install all required dependencies
+- Run `npm start` to start the development server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology Stack
 
-### `npm run build`
+- React.js: The application uses functional components and hooks for state management and side effects
+- React Router: Used for routing and navigation
+- Axios: Used for making HTTP requests to the TVMaze API
+- Tailwind CSS: For styling the application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Code Overview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The `App` component is the main component of the application, and includes the Router and Routes for different pages.
+- The `Header` component displays the application name and provides a link to the home page.
+- The `SearchForm` component allows the user to search for TV shows.
+- The `TVList` component fetches and displays a list of TV shows based on the user's search.
+- The `ShowDetails` component fetches and displays detailed information about a specific TV show.
+- The `Loading` component displays a loading spinner while the application is fetching data. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This application demonstrates the basics of making API requests, routing, and state management in a React application.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ScripXAssessment
+Please note that the TVMaze API is a public API, so there might be some limitations on the number of requests you can make. Be sure to review their API documentation for usage guidelines.
